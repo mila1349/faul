@@ -1,0 +1,289 @@
+@import 'src/style.scss';
+
+#hero{
+    @include center(column);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    .loop{
+        position: absolute;
+        top: -30%;
+        right: -15%;
+        width: 400px;
+    }
+    .elipse_1{
+        position: absolute;
+        left: -20%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 500px;
+    }
+    .elipse_2{
+        position: absolute;
+        right: 0;
+        bottom: -50%;
+        width: 500px;
+    }
+    .symbol{
+        width: 35%;
+        min-width: 250px;
+        height: auto;
+        position: relative;
+        .viking{
+            width: 100%;
+            height: auto;
+        }
+        .shine{
+            width: 160%;
+            position: absolute;
+            top: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0.9;
+        }
+        h1{
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+    }
+    .text{
+        min-width: 250px;
+        text-align: center;
+        margin-top: 1rem;
+        padding: 1rem;
+        position: relative;
+        .rectangle{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(196, 38, 41, 0.10) 0%, rgba(242, 47, 44, 0.50) 100%);
+        filter: blur(10px);
+        }
+    }
+}
+.description{
+    width: 100%;
+    background: linear-gradient(180deg, rgba(196, 38, 41, 0.10) 0%, rgba(242, 47, 44, 0.50) 100%);
+    text-align: center;
+    @include center(column);
+    padding: 5rem 7rem;
+}
+
+
+#brands{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .desc{
+        width: 50%;
+        // display: flex;
+        flex-direction: column;
+        h2{
+            margin-bottom: 3rem;
+        }
+        p{
+            margin-bottom: 1rem;
+        }
+    }
+    .images{
+        width: 50%;
+        position: relative;
+        height: 100vh;
+        .pattern{
+            // background: yellow;
+            position: absolute;
+            width: 90%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .info{
+            position: absolute;
+            text-align: center;
+            @include center(column);
+            width: 150px;
+            padding: 1rem;
+            .line{
+                width: 50px;
+                height: 2px;
+                background: $primary-color;
+                position: absolute;
+                top: -2px;
+                left: -2px;
+            }
+        }
+        .info_1{
+            top: 15%;
+            left: 10%;
+        }
+        .info_2{
+            top: 20%;
+            right: 10%;
+        }
+        .info_3{
+            bottom: 30%;
+            left: 20%;
+        }
+        .info_4{
+            bottom: 20%;
+            right: 8%;
+        }
+    }
+}
+.offers{
+    width: 100%;
+    @include center(column);
+    .offer{
+        margin-top: 3rem;
+        width: 80%;
+        position: relative;
+        p{
+            margin-top: 1rem;
+        }
+        .glass{
+            position: relative;
+            padding: 2rem;
+            width: 100%;
+            display: flex;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.05) 100%);
+            backdrop-filter: blur(50px);
+        }
+        .circle{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            transition-duration: 1s;
+        }
+        .line{
+            width: 3px;
+            height: 150px;
+            background: red;
+            margin: 0 1rem;
+            opacity: 0.6;
+        }
+    }
+}
+.creator-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    .creator{
+        // min-width: 300px;
+        width: 32%;
+        // flex: 1 0 0;
+        padding: 1.5rem ;
+        margin-bottom: 1.5rem;
+        position: relative;
+        overflow: hidden;
+        img{
+            bottom: -50%;
+            right: -20%;
+            position: absolute;
+            z-index: 100;
+        }
+        p{
+            margin-top: 1rem;
+            width: 80%;
+        }
+    }
+    .creator:last-of-type{
+        flex: 1 0 0;
+        width: 64%;
+        margin-right: 1.5rem;
+    }
+    .nahh{
+        width: 32%;
+        
+    }
+}
+#creators{
+    h2{
+        margin-bottom: 1rem;
+    }
+}
+
+.big{
+    display: flex;
+}
+.small{
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    .big{
+        display: none;
+    }
+    .small{
+        display: flex;
+        flex-direction: column;
+    }
+    .description{
+        padding: 3rem 1rem;
+    }
+    .shine{
+        width: 200% !important;
+        top: -70% !important;
+    }
+    #brands{
+        flex-direction: column;
+        .small{
+            width: 100%;
+            margin-top: 2rem;
+        }
+        .images{
+            width: 100%;
+        }
+    }
+    .info{
+        padding: 0.5rem !important;
+        width: 100px !important;
+    }
+    .info_3{
+        bottom: 0 !important;
+        left: 10% !important;
+    }
+    .info_4{
+        bottom: -5% !important;
+    }
+    .offers{
+        text-align: center;
+        .glass{
+            flex-direction: column ;
+            .line{
+                display: none;
+            }
+            .offer_1{
+                margin: 1rem 0rem;
+            }
+        }
+    }
+    .creator-container{
+        .creator{
+            width: 100% !important;
+        }
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .creator{
+        width: 48% !important;
+        padding: 1rem !important;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .creator{
+        width: 100% !important;
+    }
+    .creator:last-of-type{
+        margin-right: 0 !important;
+    }
+    .nahh{
+        width: 100% !important;
+    }
+}
