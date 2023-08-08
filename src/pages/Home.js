@@ -51,7 +51,7 @@ function Home() {
         </motion.div>
     </div>
     <div className="description">
-      <p>
+      <p className='beda'>
         <TextSlideUp>Welcome to Faul , where creativity knows no bounds and potential finds its ultimate expression. We are not just a company; we are the architects of aspiration, the enablers of innovation . At Faul , we harness the power of inspiration and dedication to propel creators beyond limits, nurturing their talents and igniting the spark of greatness within. Join us on a transformative journey as we unlock the doors to unparalleled growth, development, and the realization of your true creative potential.
         </TextSlideUp>
         </p>

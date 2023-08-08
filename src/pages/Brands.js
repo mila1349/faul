@@ -66,17 +66,17 @@ function Brands() {
                 <div className="line-ho"></div>
                 <div className="offer_1 off_1" onMouseEnter={()=>setWhere(0)} onMouseLeave={()=>setWhere(1)}>
                     <h4>integrated sponsorship</h4>
-                    <p>If there's one subject that dominates our inbox, it's integerated sponsorship requests. Want and influencer to use your device while gaming? An excited unboxing, road test or natural review of your new product? Or just a fun competition or online giveaway to promote your brand? You name iit, we love to make it happen.</p>
+                    <p>If there's one subject that dominates our inbox, it's integerated sponsorship requests. Want an influencer to use your device while gaming? An excited unboxing, road test or natural review of your new product? Or just a fun competition or online giveaway to promote your brand? You name it, we love to make it happen.</p>
                 </div>
                 <div className="line"></div>
                 <div className="offer_1 off_2">
                     <h4>event attendance</h4>
-                    <p>If you're running an event, a great way to driving ticket sales is to invite influencer who will promote it to their audience. Our talent is available for VIP parties, meet and greets, stage shows, live productions or even personal appearence. Just let us know you talent requirements and we'll take care of the rest.</p>
+                    <p>If you're running an event, a great way to driving ticket sales is to invite influencer who will promote it to their audience. Our talent is available for VIP parties, meet and greets, stage shows, live productions or even personal appearence. Just let us know your talent requirements and we'll take care of the rest.</p>
                 </div>
                 <div className="line"></div>
                 <div className="offer_1 off_3" onMouseEnter={()=>setWhere(2)} onMouseLeave={()=>setWhere(1)}>
                     <h4>dedicated sponsorship</h4>
-                    <p>Launching a new product? Our talent can create original, enganing videos that promote your product to millions of engaged viewers more 'organically' than traditional advertising. Our talent creates everything from simple vlogs and skits to video gameplay, film trailers and muc more.</p>
+                    <p>Launching a new product? Our talent can create original, enganing videos that promote your product to millions of engaged viewers more 'organically' than traditional advertising. Our talent creates everything from simple vlogs and skits to video gameplay, film trailers and much more.</p>
                 </div>
             </div>
         </div>

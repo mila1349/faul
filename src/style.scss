@@ -37,6 +37,10 @@ $secondary-color: #E2E2E2;
     font-family: 'Cocogoose';
     src:local('Cocogoose'), url('./font/Cocogoose.ttf') format('truetype');
 }
+@font-face{
+    font-family: 'Centaur';
+    src:local('Centaur'), url('./font/Centaur.ttf') format('truetype');
+}
 
 h1{
     font-family: 'Permanent Marker', cursive;
