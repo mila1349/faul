@@ -5,6 +5,9 @@
     position: relative;
     overflow: hidden;
     text-align: center;
+    h1{
+        font-family: 'Permanent Marker', cursive;
+    }
     .loop{
         position: absolute;
         top: -30%;
@@ -73,8 +76,11 @@
     text-align: center;
     @include center(column);
     padding: 5rem 7rem;
+    
 }
-
+.beda{
+    font-family: 'Cocogoose';
+}
 
 #brands{
     display: flex;
@@ -140,7 +146,7 @@
     width: 100%;
     @include center(column);
     .offer{
-        margin-top: 3rem;
+        margin: 5rem 0;
         width: 80%;
         position: relative;
         p{
@@ -155,6 +161,8 @@
             backdrop-filter: blur(50px);
         }
         .circle{
+            min-width: 250px;
+            width: 35%;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -163,7 +171,7 @@
         }
         .line{
             width: 3px;
-            height: 150px;
+            height: 200px;
             background: red;
             margin: 0 1rem;
             opacity: 0.6;
@@ -200,7 +208,7 @@
         margin-right: 1.5rem;
     }
     .nahh{
-        width: 32%;
+        width: 64%;
         
     }
 }
@@ -226,6 +234,9 @@
     }
     .description{
         padding: 3rem 1rem;
+        p{
+            font-size: calc(12px + (20 - 12) * ((100vw - 320px) / (1400 - 320)));
+        }
     }
     .shine{
         width: 200% !important;
@@ -269,6 +280,17 @@
             width: 100% !important;
         }
     }
+}
+.constant{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .nahh{
+        text-align: center;
+    }
+    margin-bottom: 2rem;
 }
 @media only screen and (max-width: 1200px) {
     .creator{

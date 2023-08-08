@@ -72,19 +72,21 @@ function Creators() {
                 <p>Our experts devise long-term plans to set clear goals, milestones, and KPIs, guiding your channel's growth and evolution.</p>
                 <img src="images/pattern7.png" alt="" />
             </motion.div>
-            <motion.div className="creator glass"
-                initial={{x:"-30px",opacity:0}}
-                animate={{x:"0",opacity:1, transition:{duration:0.25}}}
-            >
-                <div className="line-ho"></div>
-                <h4>Constant Innovation</h4>
-                <p>The digital landscape evolves rapidly, and we ensure you stay at the forefront by incorporating the latest trends, techniques, and technologies.</p>
-                <img src="images/pattern5.png" alt="" />
-            </motion.div>
-            <motion.p className='nahh'
-                 initial={{x:"-30px",opacity:0}}
-                 animate={{x:"0",opacity:1, transition:{duration:0.25,delay:0.25}}}
-            >With Faul by your side, you're not just a content creator – you're a digital visionary with the tools and support to shape your YouTube journey like never before.</motion.p>
+            <div className="constant">
+                <motion.div className="creator glass"
+                    initial={{x:"-30px",opacity:0}}
+                    animate={{x:"0",opacity:1, transition:{duration:0.25}}}
+                >
+                    <div className="line-ho"></div>
+                    <h4>Constant Innovation</h4>
+                    <p>The digital landscape evolves rapidly, and we ensure you stay at the forefront by incorporating the latest trends, techniques, and technologies.</p>
+                    <img src="images/pattern5.png" alt="" />
+                </motion.div>
+                <motion.p className='nahh'
+                    initial={{x:"-30px",opacity:0}}
+                    animate={{x:"0",opacity:1, transition:{duration:0.25,delay:0.25}}}
+                >With Faul by your side, you're not just a content creator – you're a digital visionary with the tools and support to shape your YouTube journey like never before.</motion.p>
+            </div>
         </div>
     </div>
   )

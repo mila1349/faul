@@ -19,7 +19,16 @@ function Home() {
         <div className="symbol">
           <motion.img src="images/symbol.png" alt="" className='viking'
             initial={{y:"-500px"}}
-            animate={{y:"0",transition:{duration:1.5}}}
+            animate={
+              done?{
+                y:0,
+                rotate: [0,360],
+                transition: {
+                  repeat: Infinity,
+                  duration:20,
+                }
+              }:{y:"0",transition:{duration:1.5}}
+          }
             onAnimationComplete={()=>setDone(true)}
           />
           <img src="images/shine.png" alt="" className='shine'/>
@@ -38,7 +47,7 @@ function Home() {
           animate={{opacity:1,transition:{duration:1.5,delay:3}}}
         >
           <div className="rectangle"></div>
-          <motion.h5>From Rough to Radiant, uncover Your Inner Gem with FAUL</motion.h5>
+          <motion.h5 className='beda'>From Rough to Radiant, uncover Your Inner Gem with FAUL</motion.h5>
         </motion.div>
     </div>
     <div className="description">

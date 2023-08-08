@@ -33,6 +33,10 @@ $secondary-color: #E2E2E2;
     font-family: 'Groupe';
     src:local('Groupe'), url('./font/Groupe.otf') format('truetype');
 }
+@font-face{
+    font-family: 'Cocogoose';
+    src:local('Cocogoose'), url('./font/Cocogoose.ttf') format('truetype');
+}
 
 h1{
     font-family: 'Permanent Marker', cursive;
@@ -66,7 +70,7 @@ h5{
     font-family: 'Gudea', sans-serif;
     color: $secondary-color;
     font-weight: lighter;
-    font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1400 - 320)));
+    font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1400 - 320)));
 }
 p{
     font-family: 'Gudea', sans-serif;

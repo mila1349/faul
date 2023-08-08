@@ -13,13 +13,13 @@ function Social() {
             <img src="images/instagram.png" alt="" />
         </a>
         <a href="">
-            <img src="images/facebook.png" alt="" />
-        </a>
-        <a href="">
             <img src="images/twitter.png" alt="" />
         </a>
         <a href="">
             <img src="images/youtube.png" alt="" />
+        </a>
+        <a href="">
+            <img src="images/linkedin.png" alt="" />
         </a>
         <div className="line line_2"></div>
     </motion.div>
